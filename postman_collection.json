@@ -1,0 +1,42 @@
+{
+	"info": {
+		"name": "School Management API",
+		"_postman_id": "unique-id",
+		"description": "Collection for testing School Management APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add School",
+			"request": {
+				"method": "POST",
+				"header": [{ "key": "Content-Type", "value": "application/json" }],
+				"url": {
+					"raw": "{{baseUrl}}/api/addSchool",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "addSchool"]
+				},
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Test School\",\n\t\"address\": \"123 Test St\",\n\t\"latitude\": 40.7128,\n\t\"longitude\": -74.006\n}"
+				}
+			}
+		},
+		{
+			"name": "List Schools",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/listSchools?latitude=40.7128&longitude=-74.006",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "listSchools"],
+					"query": [
+						{ "key": "latitude", "value": "40.7128" },
+						{ "key": "longitude", "value": "-74.006" }
+					]
+				}
+			}
+		}
+	]
+}
