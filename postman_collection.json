@@ -18,7 +18,12 @@
 				},
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Test School\",\n\t\"address\": \"123 Test St\",\n\t\"latitude\": 40.7128,\n\t\"longitude\": -74.006\n}"
+					"raw": {
+   						 "name": "Test School",
+  						  "address": "123 Test St",
+  						  "latitude": 40.7128,
+  						  "longitude": -74.006
+}
 				}
 			}
 		},
