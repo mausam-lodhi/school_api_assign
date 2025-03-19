@@ -12,8 +12,8 @@
 				"method": "POST",
 				"header": [{ "key": "Content-Type", "value": "application/json" }],
 				"url": {
-					"raw": "{{baseUrl}}/api/addSchool",
-					"host": ["{{baseUrl}}"],
+					"raw": "https://school-api-assignment.onrender.com/api/addSchool",
+					"host": ["https://school-api-assignment.onrender.com"],
 					"path": ["api", "addSchool"]
 				},
 				"body": {
@@ -28,8 +28,8 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/api/listSchools?latitude=40.7128&longitude=-74.006",
-					"host": ["{{baseUrl}}"],
+					"raw": "https://school-api-assignment.onrender.com/api/listSchools?latitude=40.7128&longitude=-74.006",
+					"host": ["https://school-api-assignment.onrender.com"],
 					"path": ["api", "listSchools"],
 					"query": [
 						{ "key": "latitude", "value": "40.7128" },
